@@ -18,6 +18,15 @@ public class BMIModel
         return result;
     }
 
+    public String toPound()
+    {
+        double index = this.weight / (this.height * this.height);
+        double pound = index/0.454;
+        String result = String.format("%.0f", index);
+
+
+    }
+
     public static void main(String[] args)
     {
         BMIModel myModel = new BMIModel("100","1.8");
