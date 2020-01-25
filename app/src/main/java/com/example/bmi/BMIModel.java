@@ -29,8 +29,7 @@ public class BMIModel
 
     public String toFeetInch()
     {
-        double conversion = Utility.m2FtInch(double h);
-        String result = String.format(conversion);
+        String result = Utility.m2FtInch(height);
         return result;
     }
 

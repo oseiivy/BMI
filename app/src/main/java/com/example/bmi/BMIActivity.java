@@ -24,8 +24,12 @@ public class BMIActivity extends AppCompatActivity {
 
         BMIModel myModel = new BMIModel(weight, height);
         String myBMI = myModel.getBMI();
+        String myWeight = myModel.toPound();
+        String myHeight = myModel.toFeetInch();
 
-        ((TextView) findViewById(R.id.answer)).setText(myBMI);
+
+
+        ((TextView) findViewById(R.id.answer)).setText("Your weight is " + myWeight +"lb, " + "your Height is "+ myHeight+ ", " + "and your BMI is "+ myBMI + ".");
     }
 
 }
